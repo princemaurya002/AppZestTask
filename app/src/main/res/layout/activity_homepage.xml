@@ -9,7 +9,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="26dp"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -18,7 +20,6 @@
             android:padding="16dp"
             android:background="@drawable/daily_streak_bg">
 
-            <!-- Top Navigation Bar -->
             <HorizontalScrollView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -37,7 +38,7 @@
                         app:cardElevation="2dp">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="130dp"
                             android:layout_height="wrap_content"
                             android:background="#603EFF"
                             android:gravity="center"
@@ -63,8 +64,9 @@
                         app:cardElevation="2dp">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="130dp"
                             android:layout_height="wrap_content"
+                            android:background="#603EFF"
                             android:gravity="center"
                             android:paddingStart="20dp"
                             android:paddingTop="8dp"
@@ -75,7 +77,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Earn"
-                                android:textColor="#000000"
+                                android:textColor="#FFFFFF"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -83,12 +85,14 @@
                     <androidx.cardview.widget.CardView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
                         app:cardCornerRadius="20dp"
                         app:cardElevation="2dp">
 
                         <LinearLayout
-                            android:layout_width="wrap_content"
+                            android:layout_width="130dp"
                             android:layout_height="wrap_content"
+                            android:background="#603EFF"
                             android:gravity="center"
                             android:paddingStart="20dp"
                             android:paddingTop="8dp"
@@ -99,19 +103,46 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Wallet"
-                                android:textColor="#000000"
+                                android:textColor="#FFFFFF"
                                 android:textSize="16sp" />
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
-                </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="130dp"
+                            android:layout_height="wrap_content"
+                            android:background="#603EFF"
+                            android:gravity="center"
+                            android:paddingStart="20dp"
+                            android:paddingTop="8dp"
+                            android:paddingEnd="20dp"
+                            android:paddingBottom="8dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="History"
+                                android:textColor="#FFFFFF"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- Daily Streak Section -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:text="Daily streak"
+                android:fontFamily="@font/poppins_light"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -127,7 +158,6 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <!-- Day 1 -->
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
@@ -150,7 +180,6 @@
                             android:textSize="14sp" />
                     </LinearLayout>
 
-                    <!-- Day 2 -->
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
@@ -173,7 +202,6 @@
                             android:textSize="14sp" />
                     </LinearLayout>
 
-                    <!-- Day 3 -->
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
@@ -196,7 +224,6 @@
                             android:textSize="14sp" />
                     </LinearLayout>
 
-                    <!-- Day 4 -->
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
@@ -219,7 +246,6 @@
                             android:textSize="14sp" />
                     </LinearLayout>
 
-                    <!-- Day 5 -->
                     <LinearLayout
                         android:layout_width="72dp"
                         android:layout_height="wrap_content"
@@ -240,10 +266,54 @@
                             android:textColor="#000000"
                             android:textSize="14sp" />
                     </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/daily_streak_day_bg"
+                            android:src="@drawable/daily_streak_fire" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Day 6"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:background="@drawable/daily_streak_day_bg"
+                            android:src="@drawable/daily_streak_fire" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Day 7"
+                            android:textColor="#000000"
+                            android:textSize="14sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </HorizontalScrollView>
 
-            <!-- Feature Cards Grid -->
+
             <androidx.gridlayout.widget.GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -251,7 +321,6 @@
                 app:columnCount="2"
                 app:rowCount="4">
 
-                <!-- Big Win Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -260,30 +329,47 @@
                     app:cardElevation="2dp"
                     app:layout_columnWeight="1">
 
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#FFCC00"
-                        android:orientation="vertical"
+                        android:background="#5552FF"
                         android:padding="16dp">
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/purple_tilted_rect" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Big Win!"
-                            android:textColor="#000000"
+                            android:textColor="#FFFFFF"
                             android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:layout_gravity="top|start" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 6"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            android:layout_gravity="bottom|start"
+                            android:layout_margin="4dp" />
 
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_marginTop="8dp"
-                            android:src="@drawable/daily_streak_big_win_fire" />
-                    </LinearLayout>
+                            android:layout_gravity="bottom|end"
+                            android:src="@drawable/daily_streak_big_win_fire"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp" />
+
+                    </FrameLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Jackpot Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -292,12 +378,17 @@
                     app:cardElevation="2dp"
                     app:layout_columnWeight="1">
 
-                    <LinearLayout
+                    <FrameLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="#FFDD77"
-                        android:orientation="vertical"
                         android:padding="16dp">
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/yellow_tilted_rect" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -305,29 +396,42 @@
                             android:text="Jackpot!"
                             android:textColor="#000000"
                             android:textSize="18sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            android:layout_gravity="top|start" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Day 5"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:layout_gravity="bottom|start"
+                            android:layout_margin="4dp" />
+
 
                         <ImageView
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:layout_marginTop="8dp"
+                            android:layout_gravity="bottom|end"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
                             android:src="@drawable/daily_streak_jackpot_fire" />
-                    </LinearLayout>
+                    </FrameLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Play Time Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp"
-                    app:layout_columnWeight="1">
+                    app:layout_columnWeight="1"
+                    >
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:background="#C6B9FF"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -362,7 +466,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Blit.com Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -374,7 +477,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:background="#E6E5FF"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -409,7 +512,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- MyChips Rewards Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -457,7 +559,6 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Watch & Win Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -469,7 +570,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:background="#C6B9FF"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -491,7 +592,8 @@
                             <ImageView
                                 android:layout_width="24dp"
                                 android:layout_height="24dp"
-                                android:src="@drawable/tv_icon" />
+                                android:src="@drawable/tv_icon"
+                                android:layout_gravity="bottom|end"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -499,12 +601,12 @@
                                 android:layout_marginStart="8dp"
                                 android:text="Watch Videos"
                                 android:textColor="#888888"
-                                android:textSize="14sp" />
+                                android:textSize="14sp"
+                                android:layout_gravity="bottom|start"/>
                         </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- Follow Us Card -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -516,7 +618,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="#FFFFFF"
+                        android:background="#FFE899"
                         android:orientation="vertical"
                         android:padding="16dp">
 
@@ -552,7 +654,6 @@
                 </androidx.cardview.widget.CardView>
             </androidx.gridlayout.widget.GridLayout>
 
-            <!-- Top Ranks Section -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -565,13 +666,16 @@
                     android:layout_height="wrap_content"
                     android:background="#FFFFFF"
                     android:orientation="horizontal"
-                    android:padding="16dp">
+                    android:padding="16dp"
+                    android:backgroundTint="#FFC107">
 
                     <LinearLayout
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:orientation="vertical">
+
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -598,163 +702,189 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Extra Rewards Card -->
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="2dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#FFFFFF"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-
-                    <LinearLayout
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Extra Rewards!"
-                            android:textColor="#000000"
-                            android:textSize="18sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="4dp"
-                            android:text="Download high reward value games"
-                            android:textColor="#888888"
-                            android:textSize="14sp" />
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:layout_gravity="center_vertical"
-                        android:src="@drawable/game_img" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <!-- Hourly Rewards Section -->
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:text="Rewards every hour"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:gravity="center_horizontal">
 
-                <!-- 3 hours -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
                     android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="16dp">
+                        android:background="@color/yellow_primary"
+                        android:padding="12dp"
+                        android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:src="@drawable/timer_ic" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="3 hours"
+                            android:layout_marginTop="6dp"
+                            android:text="13 Hours"
                             android:textColor="#000000"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:background="@color/yellow_secondary" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- 12000.00 -->
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
                     android:layout_weight="1"
+                    android:layout_marginEnd="6dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="16dp">
+                        android:background="@color/yellow_primary"
+                        android:padding="12dp"
+                        android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:src="@drawable/timer_ic" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="12000.00"
+                            android:layout_marginTop="6dp"
+                            android:text="12:00:00"
                             android:textColor="#000000"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:background="@color/yellow_secondary" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <!-- 12500.00 -->
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
                     app:cardCornerRadius="12dp"
                     app:cardElevation="2dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
                         android:orientation="vertical"
-                        android:padding="16dp">
+                        android:background="@color/yellow_primary"
+                        android:padding="12dp"
+                        android:gravity="center">
 
                         <ImageView
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
                             android:src="@drawable/timer_ic" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:text="12500.00"
+                            android:layout_marginTop="6dp"
+                            android:text="24:00:00"
                             android:textColor="#000000"
-                            android:textSize="16sp"
+                            android:textSize="14sp"
                             android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:background="@color/yellow_secondary" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="6dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@color/yellow_primary"
+                        android:padding="12dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/timer_ic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="36:00:00"
+                            android:textColor="#000000"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="8dp"
+                            android:gravity="center"
+                            android:text="Unlock"
+                            android:textColor="#000000"
+                            android:textSize="13sp"
+                            android:textStyle="bold"
+                            android:background="@color/yellow_secondary" />
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
