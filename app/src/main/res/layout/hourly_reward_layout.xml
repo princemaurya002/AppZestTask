@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bg_yellow"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/rewardTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3 hours"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btnUnlock"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/round_bg_yellow"
+        android:text="Unlock"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+</LinearLayout>
